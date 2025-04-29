@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Us - ADVAT NG</title>
+    <style>
+        .follow-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .follow-buttons a {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Follow Us on Social Media!</h1>
+    </header>
+
+    <div class="follow-buttons">
+        <!-- Facebook Follow Button -->
+        <a href="https://www.facebook.com/advat.ng" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Follow on Facebook" style="width: 40px; height: 40px;">
+        </a>
+
+        <!-- Instagram Follow Button -->
+        <a href="https://www.instagram.com/advat.ng/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Follow on Instagram" style="width: 40px; height: 40px;">
+        </a>
+
+        <!-- TikTok Follow Button -->
+        <a href="https://www.tiktok.com/@advat.ng" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo_2021.svg" alt="Follow on TikTok" style="width: 40px; height: 40px;">
+        </a>
+
+        <!-- Twitter Follow Button -->
+        <a href="https://twitter.com/advat_ng" class="twitter-follow-button" data-show-count="false" target="_blank">
+            Follow @advat_ng
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <!-- LinkedIn Follow Button -->
+        <a href="https://www.linkedin.com/company/advat.ng/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/LinkedIn_Logo_2023.png" alt="Follow on LinkedIn" style="width: 40px; height: 40px;">
+        </a>
+
+        <!-- YouTube Follow Button -->
+        <a href="https://www.youtube.com/c/advat.ng" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/YouTube_logo_2015.svg" alt="Subscribe on YouTube" style="width: 40px; height: 40px;">
+        </a>
+    </div>
+
+</body>
+</html>
