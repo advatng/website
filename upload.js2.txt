@@ -1,0 +1,38 @@
+const express = require("express");
+const multer = require("multer");
+const path = require("path");
+
+const app = express();
+const port = 3000;
+
+// Configure multer for file uploads
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "uploads/advert-videos/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + path.extname(file.originalname));
+  },
+});
+
+const upload = multer({ storage: storage });
+
+// Serve static files (uploaded advert videos)
+app.use("/uploads/advert-videos", express.static("uploads/advert-videos"));
+
+// Admin advert upload endpoint to handle video uploads
+app.post("/admin/upload_advert", upload.single("advert-video"), (req, res) => {
+  if (!req.file) {
+    return res.status(400).send("No video file uploaded.");
+  }
+
+  // Optionally, save additional information (e.g., advert title) to a database
+  console.log("Uploaded Advert Video:", req.body["advert-title"]);
+
+  // Send success message
+  res.send("Advert video uploaded successfully!");
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});

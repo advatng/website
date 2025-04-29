@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upload Latest Advert Video</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Admin Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">ADVAT NG</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="advert-upload.html">Upload Latest Advert</a></li>
+    </ul>
+  </nav>
+
+  <!-- Advert Upload Section -->
+  <section class="advert-upload">
+    <h2>Upload Latest Advert Video</h2>
+    <p>Upload your latest advert video to showcase our brand!</p>
+    
+    <!-- Upload Form -->
+    <form action="/admin/upload_advert" method="POST" enctype="multipart/form-data">
+      <label for="advert-title">Advert Title:</label>
+      <input type="text" id="advert-title" name="advert-title" required />
+      
+      <label for="advert-video">Upload Advert Video:</label>
+      <input type="file" id="advert-video" name="advert-video" accept="video/*" required />
+      
+      <button type="submit" class="submit-btn">Upload Advert Video</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ADVAT NG. All rights reserved.</p>
+  </footer>
+</body>
+</html>

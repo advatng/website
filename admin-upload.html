@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin: Upload Client Testimonial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Admin Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">ADVAT NG</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="admin-upload.html">Upload Testimonial</a></li>
+    </ul>
+  </nav>
+
+  <!-- Admin Testimonial Upload Section -->
+  <section class="admin-upload">
+    <h2>Admin: Upload Client Testimonial</h2>
+    <p>Use the form below to upload client testimonial videos.</p>
+    
+    <!-- Upload Form -->
+    <form action="/admin/upload_testimonial" method="POST" enctype="multipart/form-data">
+      <label for="client-name">Client Name:</label>
+      <input type="text" id="client-name" name="client-name" required />
+      
+      <label for="client-company">Client Company (Optional):</label>
+      <input type="text" id="client-company" name="client-company" />
+      
+      <label for="testimonial-video">Upload Testimonial Video:</label>
+      <input type="file" id="testimonial-video" name="testimonial-video" accept="video/*" required />
+      
+      <button type="submit" class="submit-btn">Upload Testimonial</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ADVAT NG. All rights reserved.</p>
+  </footer>
+</body>
+</html>
