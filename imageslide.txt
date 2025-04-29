@@ -1,0 +1,22 @@
+<div class="slider-container">
+  <div class="slider-fade">
+    <img src="image1.jpg" class="slide-img" alt="Slide 1">
+  </div>
+  <div class="slider-fade">
+    <img src="image2.jpg" class="slide-img" alt="Slide 2">
+  </div>
+  <div class="slider-fade">
+    <img src="image3.jpg" class="slide-img" alt="Slide 3">
+  </div>
+
+  <!-- Arrows -->
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <!-- Dots -->
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+</div>
